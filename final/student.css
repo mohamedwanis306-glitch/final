@@ -1,0 +1,179 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #2a5298;
+}
+
+h1 i {
+  margin-right: 10px;
+  color: #2575fc;
+}
+
+/* Form */
+.form-box {
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #2575fc;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.3s;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn.secondary {
+  background: #f1f1f1;
+  color: #333;
+  margin-right: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Student cards */
+.student-card {
+  background: #f9f9f9;
+  padding: 18px 20px;
+  border-radius: 16px;
+  margin: 15px 0;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-info {
+  max-width: 70%;
+}
+
+.student-info h3 {
+  margin-bottom: 6px;
+  color: #2a5298;
+}
+
+.student-info p {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Action buttons inside cards */
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.card-actions .icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.card-actions .icon-btn.edit {
+  color: #2575fc;
+}
+
+.card-actions .icon-btn.delete {
+  color: #e63946;
+}
+
+.card-actions .icon-btn:hover {
+  background: #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .btn.secondary {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .student-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-actions {
+    margin-top: 10px;
+  }
+}

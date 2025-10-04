@@ -1,0 +1,112 @@
+/**********************************************************************
+ * STUDENT EXERCISE FILE
+ * 
+ * This file contains step-by-step instructions for implementing
+ * a Login page and a Student Management system. All code sections
+ * are commented out with tasks and hints for the students.
+ **********************************************************************/
+
+/******************************
+ * LOGIN PAGE INSTRUCTIONS
+ ******************************/
+
+/*
+1. Initialize a variable to track login attempts.
+   Example: let attempts = 0;
+
+2. Create a function handleLogin() that will:
+   - Read the username and password from the form inputs.
+     Hint: document.getElementById('username').value.trim()
+   - Store the correct credentials in an object.
+     Example: const user = { username: "yourname", password: "password123" };
+   - Compare the input with the correct credentials.
+
+3. If the login is correct:
+   - Redirect to "student.html"
+   - Hint: window.location.href = "student.html";
+
+4. If the login is incorrect:
+   - Increment the attempts counter.
+   - Show an alert with the message: "Incorrect credentials. Attempt X/3"
+   - After 3 failed attempts, show: "Too many failed attempts"
+
+5. Make sure the HTML element IDs match the JS code.
+
+6. Optional:
+   - Add icons in inputs (e.g., username and password)
+   - Style the login button to look modern
+*/
+
+/******************************
+ * STUDENT MANAGEMENT PAGE
+ ******************************/
+
+/*
+1. Initialize an array to store students:
+   Example: let students = [];
+   And a variable to store the filter type:
+   Example: let filter = "all";
+
+2. Add Student Functionality:
+   - Read values from form inputs (name, age, student number, courses)
+   - Validate that all fields are filled
+   - Parse courses input into an array of objects:
+     Example: [{ course: "Math", mark: 80 }, { course: "English", mark: 70 }]
+   - Validate that marks are numbers and courses are not empty
+   - Calculate the average mark
+   - Determine student status: "Passed" if average >= 50, otherwise "Failed"
+   - Add the student object to the students array
+   - Reset the form after adding
+
+3. Display Students:
+   - Loop through students array (apply filter if needed)
+   - Dynamically generate HTML for each student:
+     - Name, number, age, average, status
+     - List of courses with marks
+     - Edit and Delete buttons
+   - Use container.innerHTML += ... to append each student card
+
+4. Filter Students:
+   - Implement a function filterStudents(type)
+   - Update the filter variable
+   - Refresh the display
+
+5. Delete Student:
+   - Remove the selected student from the students array
+   - Refresh the display
+
+6. Edit Student:
+   - Populate form fields with selected student's data
+   - Remove old student from array to avoid duplicates
+   - User can update values and re-add student
+
+7. Display Overall Stats:
+   - Calculate total number of students
+   - Calculate overall average of all students
+   - Display dynamically in HTML
+
+8. Additional Hints:
+   - Use template literals for generating HTML
+   - Make sure all HTML IDs match JS code
+   - Validate input data types
+   - Use CSS classes for styling status badges (Passed/Failed)
+   - Optional: style buttons, course pills, and cards to look modern
+
+9. Optional Challenges:
+   - Make the page fully responsive
+   - Add a clear form button
+   - Highlight courses with high or low marks in different colors
+*/
+
+/******************************
+ * GENERAL NOTES
+ ******************************/
+
+/*
+- Keep all functions connected to HTML via getElementById or event listeners
+- Do not hardcode any HTML output; dynamically generate it
+- Break tasks into small steps: Add -> Display -> Filter -> Edit -> Delete -> Stats
+- Encourage clean and readable code
+- Keep track of variable names and references carefully
+- Students should implement the missing logic themselves based on these instructions
+*/
